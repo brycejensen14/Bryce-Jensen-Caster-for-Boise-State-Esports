@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bronco Esports — Clips</title>
+<meta name="description" content="Highlight clips from Boise State's varsity and club esports teams — Valorant, Rocket League, Overwatch 2, League of Legends and more.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2218%22 fill=%22%230033A0%22/><text x=%2250%22 y=%2268%22 font-size=%2260%22 text-anchor=%22middle%22 fill=%22%23D64309%22 font-family=%22Arial%22 font-weight=%22bold%22>B</text></svg>">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="#top" class="wordmark">Bronco <span>Esports</span></a>
+    <nav aria-label="Primary">
+      <ul class="site-nav">
+        <li><a href="#clips">Clips</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#roster">Teams</a></li>
+        <li><a href="#join">Follow</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" type="button" aria-label="Toggle menu">☰</button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="hero-kicker">Boise State University</p>
+        <h1>Bronco Esports, on clip</h1>
+        <p>The best plays from our Valorant, Rocket League, Overwatch 2, League of Legends and Smash rosters — clutches, outplays and everything worth a rewatch, posted straight from scrims and match day.</p>
+        <div class="hero-actions">
+          <a href="#clips" class="btn btn-primary">Watch the clips</a>
+          <a href="#join" class="btn btn-ghost">Follow the teams</a>
+        </div>
+      </div>
+      <div class="stat-row">
+        <div>
+          <div class="stat-num">5</div>
+          <div class="stat-label">Active&nbsp;rosters</div>
+        </div>
+        <div>
+          <div class="stat-num">30+</div>
+          <div class="stat-label">Competing&nbsp;players</div>
+        </div>
+        <div>
+          <div class="stat-num">MWEC</div>
+          <div class="stat-label">Conference</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="clips">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Clip library</h2>
+        <p><span id="result-count"></span> — filter by game or search by player, title or tag.</p>
+      </div>
+
+      <div class="filters">
+        <div id="filter-chips" role="group" aria-label="Filter by game"></div>
+        <input
+          type="search"
+          id="clip-search"
+          class="search-input"
+          placeholder="Search clips…"
+          aria-label="Search clips"
+        >
+      </div>
+
+      <div class="clip-grid" id="clip-grid"></div>
+      <p class="empty-state" id="empty-state">No clips match that search. Try a different game or keyword.</p>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="wrap">
+      <div>
+        <h2>About the program</h2>
+        <p>Bronco Esports is Boise State University's competitive gaming program, fielding varsity and club rosters that compete in the Mountain West Esports Conference and open circuit tournaments across Valorant, Rocket League, Overwatch 2, League of Legends and Super Smash Bros. Ultimate.</p>
+        <p>This page collects the standout moments from scrims, showcases and official matches. Every clip links back to the full VOD when one is available.</p>
+      </div>
+      <div id="roster">
+        <ul class="roster-list">
+          <li><span>Valorant</span><span class="game-tag">Varsity</span></li>
+          <li><span>Rocket League</span><span class="game-tag">Varsity</span></li>
+          <li><span>Overwatch 2</span><span class="game-tag">Club</span></li>
+          <li><span>League of Legends</span><span class="game-tag">Club</span></li>
+          <li><span>Super Smash Bros. Ultimate</span><span class="game-tag">Club</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="join" id="join">
+    <div class="wrap">
+      <h2>Never miss a play</h2>
+      <p>Follow along for match schedules, live streams and the next clip before it lands here.</p>
+      <div class="social-row">
+        <a class="btn btn-primary" href="https://twitch.tv/" target="_blank" rel="noopener">Watch live on Twitch</a>
+        <a class="btn btn-ghost" href="https://discord.com/" target="_blank" rel="noopener">Join the Discord</a>
+        <a class="btn btn-ghost" href="https://x.com/" target="_blank" rel="noopener">Follow on X</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; <span id="year"></span> Bronco Esports · Boise State University</span>
+    <span>Built for GitHub Pages — <a href="README.md">contributor guide</a></span>
+  </div>
+</footer>
+
+<script src="data/clips.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
