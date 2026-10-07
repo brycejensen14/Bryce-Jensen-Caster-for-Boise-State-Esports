@@ -17,7 +17,7 @@ The best plays from our Valorant, Rocket League, Overwatch 2, League of Legends 
 ### Stats Overview
 * **5** Active rosters
 * **30+** Competing players
-* **MWEC** Conference
+* **PEC** Conference
 
 ---
 
