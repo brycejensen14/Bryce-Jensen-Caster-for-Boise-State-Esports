@@ -1,9 +1,6 @@
 # Site Settings
-title: My GitHub Site
-description: Welcome to my website hosted on GitHub Pages.
-theme: jekyll-theme-modernist
-
-# Build Settings
-markdown: kramdown
+title: Bryce Jensen - Caster for Boise State Esports
+description: Welcome to my portfolio website.
+remote_theme: pages-themes/modernist@v0.2.0
 plugins:
   - jekyll-remote-theme
